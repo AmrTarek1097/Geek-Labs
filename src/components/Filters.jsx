@@ -2,8 +2,8 @@ import React from "react";
 import DropDown from "./DropDown";
 import { useForm } from "react-hook-form";
 
-const IndustryArr = ["Health Care", "option2"];
-const MarketArr = ["Large-Cap", "option2"];
+const IndustryArr = ["Health Care", "Real estate"];
+const MarketArr = ["Large-Cap", "Small-Cap"];
 const RiskArr = ["Low-Risk", "Mid-Risk", "High-Risk"];
 
 const Filters = () => {
@@ -44,7 +44,7 @@ const Filters = () => {
     >
       <div className="h-[745px] col-span-1 rounded-xl bg-[#212121] px-6 pl-10">
         <div className="pt-3">
-          <p className="text-3xl text-center font-bold mt-6  nav_font">
+          <p className="text-5xl text-center font-bold mt-6 nav_font">
             {" "}
             Filters
           </p>

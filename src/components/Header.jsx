@@ -9,14 +9,14 @@ const Header = () => {
 
       <div className="flex justify-between ">
 
-        <div className="w-2/12  h-10">
-          <img src="/image/street suite logo-04.svg" alt="" />
+        <div className="w-2/12  h-10 sm:block hidden">
+          <img src="/image/street suite logo-04.svg " className='w-full' alt="" />
         </div>
 
-        <div className='flex items-center justify-between bg-[#181818] rounded-xl py-2 px-5 w-10/12'>
+        <div className='flex items-center justify-between  bg-[#181818] rounded-xl py-2 px-5 w-full sm:w-10/12'>
 
             <div className='relative'>
-                <input className='bg-[#ffffff] rounded-2xl p-1 px-7  w-96' type="text" placeholder='search'/>
+                <input className='bg-[#ffffff] rounded-2xl p-1 px-7 sm:w-60 w-48 md:w-96' type="text" placeholder='search'/>
                 <GoSearch className='absolute top-2 left-2 text-[#4a4c4f]'/>
             </div>
 
@@ -28,7 +28,7 @@ const Header = () => {
                 <p className='text-[#404040] font-bold text-sm'>Moni Roy</p>
                 <p className='text-[#404040] font-bold text-sm'>Admin</p>
               </div>
-            <IoIosArrowDropdown className='text-[#404040] text-xl'/>
+            <IoIosArrowDropdown className='text-[#404040] text- cursor-pointer'/>
           </div>
 
         </div>

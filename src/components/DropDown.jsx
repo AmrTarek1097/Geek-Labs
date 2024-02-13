@@ -5,14 +5,11 @@ import { SlLayers } from "react-icons/sl";
 
 const DropDown = ({
   label,
-  placeHolder,
-  disc,
   optionArr,
   selected,
   setSelected,
   handleSetValue,
-  displayCountryError,
-  setDisplayCountryError,
+ 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isChoosen, setIsChoosen] = useState(false);
@@ -52,7 +49,6 @@ const DropDown = ({
             {optionArr?.map((option, index) => {
               return (
                 <a
-                  // href="s"
                   key={index}
                   onClick={() => {
                     setSelected(option);
@@ -70,9 +66,6 @@ const DropDown = ({
             })}
           </div>
         </div>
-      )}
-      {displayCountryError === true && (
-        <p className="text-[#ed4141] text-xs">Please select an option </p>
       )}
     </div>
   );
